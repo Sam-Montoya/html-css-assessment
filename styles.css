@@ -1,0 +1,71 @@
+.page_container {
+    width: 100vw;
+    height: 100vh;
+    background: url('./img/main-bg.jpeg') no-repeat;
+    background-size: cover;
+    font-size: 40px;
+    color: white;
+    font-family: 'Fredoka One';
+}
+
+.page_header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page_mobile_header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page_mobile_header img {
+    width: 80px;
+    height: 80px;
+}
+
+.page_mobile_header section {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+}
+.page_mobile_header section img {
+    width: 30px;
+    height: 30px;
+}
+
+.page_middleContainer {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_middleContainer h1 {
+    font-size: 120px;
+}
+
+.page_circle {
+    margin: auto;
+    background-color: white;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 750px) {
+    .page_header {
+        display: none;
+    }
+    .page_mobile_header {
+        display: flex;
+    }
+}
